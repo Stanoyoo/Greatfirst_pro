@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title class="title">User Registration Form</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>User Registration Form</h1>
+            <p><strong>Note:</strong>The form below targets all the visitors who aspire to explore great learning . </p>
+        </header>
+        <div class="login-container">
+            <form class="login-form input" action="/submit" method="post" id="Registration">
+                
+                <fieldset>
+                <legend>Register with us here</legend>
+                <label for="fname">FirstName</label>
+                <input type="text" id="FirstName" name="FirstName" placeholder="Enter FirstName" pattern="(?=.*[a-z]) (?=.*[A-Z])[a-zA-Z].{8,}" title="Must contain atleast one uppercase letter and lowercase letter and contain more 8 or more">
+                <label for="lname">LastName</label>
+                <input type="text" id="LastName" name="LastName" placeholder="Enter LastName" pattern="(?=.*[a-z]) (?=.*[A-Z])[a-zA-Z].{8,}" title="Must contain atleast one uppercase letter and lowercase letter and contain more 8 or more">
+                <label for="pwd">Password</label>
+                <input type="text" id="Password" name="Password" placeholder="Enter Password" pattern="(?=.*[a-z]) (?=.*[A-Z])(*\d)[a-zA-Z\d].{6,8}" title="Must contain atleast one uppercase letter and lowercase letter and atleast one digit and contain 8 digits">
+                <label for="phone">PhoneNumber</label>
+                <input type="number" id="phone" name="phone" placeholder="Enter PhoneNumber" pattern="+254[0-9].{10}" title="Must contain atleast ten digits and start with country code +254">
+            
+                <legend>Type of account</legend>
+                <input type="radio" id="personal Account" name="account" value="personal account" required>
+                <label for="Personal account">Personal Account</label>
+                <input type="radio" id="Business Account" name="account" value="Business account" required>
+                <label for="Business account">Business Account</label>
+                <input type="radio" id="Savings Account" name="account" value="Savings account" required>
+                <label for="Savings account">Savings Account</label>
+                <input type="radio" id="Investment Account" name="account" value="Investment account" required>
+                <label for="Investment account">Investment Account</label><br>
+
+            
+        </label>
+       
+            <legend>File Upload</legend>
+            <label for="image">Upload your profile picture</label>
+            <input type="file" id="profilepicture" name="profilepicture" accept="image" required><br><br>
+            <label for="age">Age</label>
+            <input type="number" id="Age" name="Age" min="18" max="120" placeholder="Your age" required> <hr>
+            <label for="Referrer"><h4>How did you know about us?</h4></label>
+            <select name="Referrer" id="Referrer" required>
+                <option value="select">select option</option>
+                <option value="Friend">friend</option>
+                <option value="search">online search</option>
+                <option value="facebook">facebook</option>
+                <option value="newsletters">news-letters</option>
+                <option value="campaigns">campaigns</option>
+                <option value="linkedin">linkedin</option>
+                <option value="instagram">instagram</option>
+            </select>
+                <label for="bio"><h4>Biography</h4></label>
+                <textarea name="bio" id="bio" rows="4" cols="40" placeholder="Draft a message"></textarea>
+
+                    <legend><h4>Additional inquiry</h4></legend>
+                    <label for="dob">Date of Birth</label>
+                    <input type="date" id="dob" name="dob" required><hr>
+                    <article>
+                        <h4>Interested in which areas?</h4>
+                        <p>Kindly mark any field(s) that you are interested in</p>
+                    </article>
+                    <input type="checkbox" id="interests" name="interests" required>
+                    <label for="interests">coding</label>
+                    <input type="checkbox" id="interests" name="interests" required>
+                    <label for="interests">Reading</label>
+                    <input type="checkbox" id="interests" name="interests" required>
+                    <label for="interests">Design</label><br>
+                    <label for="country"><h4>Location</h4></label>
+                    <select name="country" id="country"required>
+                    <optgroup label="Africa">
+                        <option value="Kenya">select option</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Rwanda">Rwanda</option>
+                    </optgroup>
+                    <optgroup label="Asia">
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="China">China</option>
+                        <option value="South-Korea">South-Korea</option>
+                        <option value="India">India</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                        <option value="France">France</option>
+                        <option value="USA">USA</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="Netherland">Netherland</option>
+                        <option value="Portugal">Portugal</option><hr>
+                    </optgroup>
+                    </select>
+                
+                
+           </form><br>
+           <label for="terms">
+            <input type="checkbox" id="Terms and Conditions" name="terms" required>I Accept<a href="Terms and conditions.html"> Terms and conditions</a>
+        </div>
+        <div class="login-form button:hover">
+        <button type="submit" value="submit">submit</button>
+    </div>
+    </main>
+    
+</body>
+</html>
